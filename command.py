@@ -61,9 +61,9 @@ def archi():
         wind = soup.select("#wob_ws")[0].getText()
 
         if str(responce) == str(f):
-            logging.info('Подключение к серверам google прошло успешно ' + '(' + str(responce) + ')')
+            logging.info('успешно' + '(' + str(responce) + ')')
         else:
-            logging.error('Поключение к серверам google прошло неудачно, не удалось подключится!' + '(' + str(responce) + ')', exc_info=True)
+            logging.error('неудачно' + '(' + str(responce) + ')', exc_info=True)
 
         talk(f"""\
 дата и время: {time}
